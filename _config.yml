@@ -11,14 +11,18 @@ repository: "StevenZhoooooooooooooou/StevenZhoooooooooooooou.github.io"
 # --------------------
 # Author / Personal Info
 # --------------------
+# --------------------
+# Author / Personal Info
+# --------------------
 author:
   name: "Yinzhe Zhou (周寅哲)"
-  avatar: "/assets/images/bio-photo.jpg" # 记得把照片放进 assets/images/ 文件夹并重命名为 bio-photo.jpg
-  bio: "Master's Student in **ECE** at **Johns Hopkins University**. Focusing on Chip Design, FPGA, and Digital Circuits. Photography enthusiast."
+  avatar: "/assets/images/bio-photo.jpg"
+  # 更新后的 Bio，加入了 Robotics 和 SNN
+  bio: "Master's Student in **ECE** at **Johns Hopkins University**. Focusing on Chip Design, FPGA, Digital Circuits, **Robotics**, and **SNN**."
   location: "Baltimore, MD, USA"
-  email: "zhou.yinzhe@outlook.com"
+  # email: "zhou.yinzhe@outlook.com" <--- 注释掉这一行，防止系统自动生成一个额外的 "Email" 按钮
   links:
-    - label: "Email"
+    - label: "zhou.yinzhe@outlook.com" # 这里直接显示邮箱地址
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:zhou.yinzhe@outlook.com"
     - label: "GitHub"
@@ -26,7 +30,7 @@ author:
       url: "https://github.com/StevenZhoooooooooooooou"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/yinzhe-zhou" # 已修正：添加了 https://
+      url: "https://www.linkedin.com/in/yinzhe-zhou"
 
 # --------------------
 # Footer Links (页面底部的链接)

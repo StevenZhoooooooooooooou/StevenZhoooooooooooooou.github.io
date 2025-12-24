@@ -1,9 +1,17 @@
+# main 是顶部导航栏的默认标识
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "Home"       # 首页
+    url: /
+  
+  - title: "Research"   # 科研项目 (我们稍后创建这个页面)
+    url: /research/
+  
+  - title: "Photography" # 摄影作品 (我们稍后创建这个页面)
+    url: /photography/
+  
+  - title: "CV"         # 简历
+    url: /cv/
+    
+  # 如果你想把所有博客文章归档放在一个入口，可以加这个：
+  # - title: "Blog"
+  #   url: /year-archive/
