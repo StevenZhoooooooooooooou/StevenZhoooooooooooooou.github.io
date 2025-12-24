@@ -13,16 +13,42 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+# --------------------
+# Site Settings
+# --------------------
+title: "Yinzhe Zhou"   # 网站标题，通常显示在浏览器标签页
+name: "Yinzhe Zhou"    # 显示在网页上的名字
+description: "ECE Master's Student at JHU | Chip Design & Photography" # 网站简述，利于SEO
+url: "https://StevenZhoooooooooooooou.github.io" # 必须准确，否则样式会乱
+repository: "StevenZhoooooooooooooou/StevenZhoooooooooooooou.github.io" # 必须准确
+
+# --------------------
+# Author / Personal Info
+# --------------------
+author:
+  name: "Yinzhe Zhou (周寅哲)"
+  avatar: "/assets/images/bio-photo.jpg" # 稍后你需要放一张头像照片到这个路径
+  # 下面这句 Bio 结合了你的 ECE 背景和 JHU 身份
+  bio: "Master's Student in **ECE** at **Johns Hopkins University**. Focusing on Chip Design, FPGA, and Digital Circuits. Photography enthusiast."
+  location: "Baltimore, MD, USA" # JHU 所在地
+  email: "zhou.yinzhe@outlook.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square" # 信封图标
+      url: "mailto:zhou.yinzhe@outlook.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github" # GitHub 图标
+      url: "https://github.com/StevenZhoooooooooooooou"
+    # 如果你有 LinkedIn，建议稍后也加在这里
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "www.linkedin.com/in/yinzhe-zhou"
+
+# --------------------
+# System / Jekyll Settings
+# --------------------
+# 既然你在巴尔的摩，时区建议设置为美东时间，这样文章发布时间更准确
+timezone: America/New_York
 
 # Build settings
 markdown: kramdown
