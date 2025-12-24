@@ -18,7 +18,7 @@ author:
   name: "Yinzhe Zhou (周寅哲)"
   avatar: "/assets/images/bio-photo.jpg"
   # 更新后的 Bio，加入了 Robotics 和 SNN
-  bio: "Master's Student in **ECE** at **Johns Hopkins University**. Focusing on Chip Design, FPGA, Digital Circuits, **Robotics**, and **SNN**."
+  bio: "Master's Student in **ECE** at **JHU**. Photography enthusiast. Preparing for **Fall 2027 PhD** application."
   location: "Baltimore, MD, USA"
   # email: "zhou.yinzhe@outlook.com" <--- 注释掉这一行，防止系统自动生成一个额外的 "Email" 按钮
   links:
