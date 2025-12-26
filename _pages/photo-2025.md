@@ -135,4 +135,4 @@ gallery_film:
 
 ## 🎞️ Film
 
-{% include gallery id="gallery_film" caption="Shot on Kodak Portra 400" %}
+{% include gallery id="gallery_film" caption="Shot on Fujica ST801/Leica R7" %} 
