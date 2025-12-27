@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minimal-mistakes";
+
+/* =======================================
+   Custom Overrides (自定义覆盖样式)
+   ======================================= */
+
+/* 1. 修复侧边栏头像：取消圆形裁剪，显示完整长方形 */
+.author__avatar img {
+  border-radius: 0 !important; /* 0 代表直角，去掉圆形遮罩 */
+  max-width: 100% !important;  /* 宽度占满侧边栏 */
+  height: auto !important;     /* 高度自动，保持比例不拉伸 */
+  object-fit: contain;         /* 确保图片完整显示 */
+}
+
+/* 2. (可选) 如果你觉得头像太大，可以限制最大宽度 */
+/* .author__avatar { max-width: 200px; margin: 0 auto; } */
