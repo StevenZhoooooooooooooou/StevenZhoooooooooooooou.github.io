@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* 1. 这一行至关重要！它引入了原来主题所有的样式 */
+@import "minimal-mistakes";
+
+/* =======================================
+   2. 下面写你自己的修改 (Custom Styles)
+   ======================================= */
+
+/* 修复侧边栏头像：显示完整长方形，不裁剪 */
+.author__avatar img {
+  border-radius: 0 !important; /* 去掉圆形遮罩 */
+  max-width: 100% !important;  /* 宽度占满 */
+  height: auto !important;     /* 高度自适应 */
+  object-fit: contain;         /* 保证显示全图 */
+}
