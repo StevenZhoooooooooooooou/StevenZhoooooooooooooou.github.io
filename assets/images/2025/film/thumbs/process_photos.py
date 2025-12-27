@@ -12,8 +12,8 @@ thumb_dir_name = "thumbs"
 base_url_prefix = "/assets/images/2025/film/"
 
 # 4. 统一正方形边长 (像素)
-# 所有缩略图都会变成 800x800 的正方形
-SQUARE_SIZE = 800
+# 所有缩略图都会变成 600x600 的正方形
+SQUARE_SIZE = 600
 # ========================================
 
 thumbs_output_dir = os.path.join(source_dir, thumb_dir_name)
