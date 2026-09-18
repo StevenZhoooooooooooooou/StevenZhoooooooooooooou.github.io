@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% unless page.home %}{{ page.title | escape }} · {% endunless %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Yinzhe Zhou home"><span class="monogram" aria-hidden="true">yz.</span><span>Yinzhe Zhou</span></a>
+    <nav aria-label="Main navigation">
+      {% for item in site.data.navigation.main %}
+      <a href="{{ item.url | relative_url }}"{% if page.url == item.url or item.url == '/photography/' and page.url contains '/photography/' %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </header>
+  <main id="main" class="wrap{% unless page.home %} interior{% endunless %}">
+    {% unless page.home %}<div class="page-heading"><p class="eyebrow">Yinzhe Zhou / {{ page.title }}</p><h1>{{ page.title }}</h1></div>{% endunless %}
+    {{ content }}
+  </main>
+  <footer class="site-footer wrap"><p>© {{ site.time | date: '%Y' }} Yinzhe Zhou <span class="footer-chinese" lang="zh">周寅哲</span></p><div><a href="mailto:zhou.yinzhe@outlook.com">Email ↗</a><a href="https://github.com/StevenZhoooooooooooooou">GitHub ↗</a><a href="https://www.linkedin.com/in/yinzhe-zhou">LinkedIn ↗</a></div></footer>
+</body>
+</html>

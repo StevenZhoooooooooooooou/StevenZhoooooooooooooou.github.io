@@ -1,0 +1,109 @@
+education:
+  - organization: Johns Hopkins University
+    location: Baltimore, MD, USA
+    degree: Master of Science in Electrical and Computer Engineering
+    period: Aug. 2025 – Present
+    details:
+      - "**GPA:** 3.73/4.0"
+      - "**Relevant Coursework:** FPGA Synthesis Lab, CAD Design of Digital VLSI Systems, Advanced Topics in Microsystem Fabrication, Neural Implants and Interfaces, Mixed-Mode VLSI Systems."
+  - organization: University of Macau
+    location: Macao SAR
+    degree: Bachelor of Science in Electrical and Computer Engineering
+    period: Aug. 2021 – May 2025
+  - organization: City University of Hong Kong
+    location: Hong Kong SAR
+    degree: Exchange Student, Department of Electrical Engineering
+    period: Jan. 2023 – Aug. 2023
+
+internships:
+  - id: haco
+    organization: Beijing Academy of Artificial Intelligence (BAAI)
+    location: Beijing, China
+    role: Research Intern
+    period: Jun. 2026 – Sep. 2026
+    project: "HACo: Haptic Active Compliance for Dexterous Manipulation"
+    details:
+      - Developed compliance-regulated teleoperation for dual UR5 arms with Sharpa dexterous hands, combining Cartesian admittance and fingertip force regulation; collected **500 demonstrations** across five tasks with synchronized vision, robot state, tactile, and joint-torque observations.
+      - Developed a kinematics-aligned haptic encoder fusing ten fingertip tactile streams with 44 hand-joint torques, and gated cross-attention to condition a pretrained vision-language-action model on contact and load feedback.
+      - Trained the policy with conditional flow matching on compliant-action targets and auxiliary compliant-intent supervision; integrated real-time action chunking for asynchronous closed-loop execution.
+      - Conducted real-robot comparisons and component ablations across **five force-sensitive tasks**, with 20 trials per task–method pair; HACo achieved **83% mean success**, versus **35%** for the strongest evaluated baseline (**+48 percentage points**).
+  - id: msra
+    organization: Microsoft Research Asia (MSRA)
+    location: Beijing, China
+    role: Research Intern
+    period: Jun. 2024 – Sep. 2024
+    project: Fine-Tuning Mixtral 8x7B on Biochemical Molecular Data
+    details:
+      - Constructed and preprocessed a PubChem-based dataset for molecular property prediction tasks.
+      - Implemented KNN retrieval over SMILES representations to provide similar-molecule context for in-context learning.
+      - Fine-tuned Mixtral 8x7B and refined the evaluation protocol, improving test accuracy from **67% to 77%**.
+      - "**Tech:** Python, Git, VS Code."
+
+research:
+  - id: shear-sensing
+    organization: Johns Hopkins University
+    location: Baltimore, MD, USA
+    role: Graduate Researcher
+    period: Feb. 2026 – Present
+    project: Scalable Shear-Force Sensing for Tactile Perception and Robotic Grasping
+    summary: Embedded sensing, real-time data acquisition, and robotic grasping experiments.
+    details:
+      - Contributed to a scalable piezoresistive shear-force sensing system spanning multiple sensor form factors and integration onto a UMI handheld gripper for robot data collection.
+      - Developed embedded firmware and data-acquisition routines for real-time shear-field readout across different sensor-array configurations.
+      - Designed and ran sensor characterization and robotic grasping experiments to evaluate shear-force features under varied contact conditions.
+  - id: event-tactile
+    organization: Johns Hopkins University × TU Darmstadt
+    location: Baltimore, MD, USA
+    role: Graduate Researcher
+    period: Nov. 2025 – Present
+    project: Event-Based Visuo-Tactile Sensing for Robot Imitation Learning
+    summary: Multimodal imitation learning with RGB, tactile, and event observations.
+    details:
+      - Building a multimodal imitation-learning pipeline that fuses RGB, tactile, and event streams for a UR robot-mounted gripper, targeting contact, slip, and fast-motion cues missed by RGB-only policies.
+      - Implemented a synchronized multi-rate data pipeline from handheld demonstrations into observation–action samples, aligning RGB at 30 Hz, tactile/event streams at 120 Hz, and 3D pose at 75 Hz.
+      - Trained and deployed **Diffusion Policy** and **Flow Matching** algorithms on real-world tasks.
+      - Developing an **event-conditioned Flow Matching** policy with a lightweight 3D-CNN event encoder for high-frequency tactile/event observations.
+  - id: biosignals
+    organization: University of Macau
+    location: Macao SAR
+    role: Final Year Project — Faculty Dean's Honors List
+    period: Sep. 2024 – May 2025
+    project: Singular Spectrum Analysis for Biosignal Denoising and Feature Extraction
+    details:
+      - Designed a two-level Singular Spectrum Analysis framework combining component correlation and waveform reconstruction for ECG and EEG signal analysis.
+      - Localized ECG PQRST features and removed EEG artifacts while preserving neural rhythms across delta, theta, alpha, and beta bands.
+      - Validated the method on synthetic and real recordings, recovering physiological patterns such as eyes-open vs. eyes-closed alpha rhythm differences.
+      - "**Tech:** Python, NumPy, SciPy, Matplotlib, NeuroKit2."
+  - id: neural-decoding
+    organization: City University of Hong Kong
+    location: Hong Kong SAR
+    role: Research Assistant
+    period: May 2023 – Aug. 2023
+    project: Neural Decoding for Implantable Brain–Machine Interfaces with ANN and SNN
+    details:
+      - Preprocessed raw primate neural recordings into supervised datasets with movement coordinates, finger positions, and spike trains.
+      - Designed and benchmarked ANN and SNN decoders for neural decoding, comparing accuracy–efficiency trade-offs for implantable BMI scenarios.
+      - "**Tech:** Python, MATLAB."
+  - id: fpga-biomedical
+    organization: University of Macau
+    location: Macao SAR
+    role: Research Assistant
+    period: May 2022 – Jul. 2022
+    project: FPGA-Based Hardware Time-Triggered System for Biomedical Engineering
+    details:
+      - Implemented FPGA-based signal conditioning and filtering pipelines in Quartus for biomedical data acquisition.
+      - Refined hardware architecture and I/O interfaces to support deterministic time-triggered behavior.
+      - "**Tech:** Quartus, MATLAB."
+
+honors:
+  - "**1st Runner-Up**, IEEE Student Branch Project Competition 2025."
+  - "**Akrostar Academic Prize**, University of Macau, 2024/2025."
+  - "**Dean's Honor List**, University of Macau, all semesters."
+  - "**Academic Excellence Outgoing Exchange Scholarship**, City University of Hong Kong, 2023."
+  - "**Top 10%**, Huawei ICT Competition (Preliminary), Macau, 2021–2022."
+
+skills:
+  - "**Programming:** Python, MATLAB, C/C++, Verilog, VHDL."
+  - "**ML / Robotics:** PyTorch, ROS 2, Diffusion Policy, Flow Matching, multimodal data synchronization, robot imitation learning."
+  - "**Hardware / EDA:** FPGA development, embedded firmware, signal acquisition, Vivado, Quartus, Cadence, 3D CAD."
+  - "**Research Domains:** Tactile sensing, biosignal processing, brain–machine interfaces, LLM fine-tuning, digital circuit design."

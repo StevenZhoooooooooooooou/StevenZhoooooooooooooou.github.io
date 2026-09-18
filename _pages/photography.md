@@ -1,10 +1,11 @@
 ---
 title: "Photography"
 permalink: /photography/
-layout: single
-author_profile: true
+layout: personal
 ---
 
-Select a year to view the gallery:
-
-* [**2025 Portfolio**](/photography/2025/)
+<a class="portfolio-link" href="{{ '/photography/2025/' | relative_url }}">
+  <span class="eyebrow">Through my lens</span>
+  <span class="portfolio-title">2025 · On film <span aria-hidden="true">↗</span></span>
+  <span class="portfolio-description">A collection of moments, captured on film.</span>
+</a>

@@ -1,0 +1,27 @@
+---
+layout: personal
+title: Curriculum Vitae
+permalink: /cv/
+---
+<div class="cv-toolbar"><a class="button" href="{{ '/assets/docs/Yinzhe_CV.pdf' | relative_url }}" download>Download CV (PDF) <span aria-hidden="true">↓</span></a><p>Updated September 2026</p></div>
+<section class="cv-section" aria-labelledby="education">
+  <h2 id="education">Education</h2>
+  {% for entry in site.data.cv.education %}
+  <article class="cv-entry">
+    <div class="cv-entry-heading"><h3>{{ entry.organization | escape }}</h3><span>{{ entry.period | escape }}</span></div>
+    <p class="cv-role">{{ entry.degree | escape }} · {{ entry.location | escape }}</p>
+    {% if entry.details %}<ul>{% for detail in entry.details %}<li>{{ detail | markdownify }}</li>{% endfor %}</ul>{% endif %}
+  </article>
+  {% endfor %}
+</section>
+<section class="cv-section" aria-labelledby="manuscripts"><h2 id="manuscripts">Manuscripts</h2>{% include manuscript-entry.html %}</section>
+<section class="cv-section" aria-labelledby="internships">
+  <h2 id="internships">Research Internships</h2>
+  {% for entry in site.data.cv.internships %}{% include cv-experience.html entry=entry %}{% endfor %}
+</section>
+<section class="cv-section" aria-labelledby="academic-research">
+  <h2 id="academic-research">Research Experience</h2>
+  {% for entry in site.data.cv.research %}{% include cv-experience.html entry=entry %}{% endfor %}
+</section>
+<section class="cv-section" aria-labelledby="honors"><h2 id="honors">Selected Honors &amp; Awards</h2><ul>{% for entry in site.data.cv.honors %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>
+<section class="cv-section" aria-labelledby="skills"><h2 id="skills">Technical Skills</h2><ul>{% for entry in site.data.cv.skills %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>

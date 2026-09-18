@@ -1,7 +1,7 @@
 ---
 title: "2025 Portfolio"
 permalink: /photography/2025/
-layout: splash
+layout: personal
 author_profile: true
 header:
   overlay_color: "#333"
@@ -273,10 +273,8 @@ gallery_film:
     alt: "22222"
 ---
 
-## 📷 Digital
-(Coming Soon)
-
----
-
-## 🎞️ Film
-{% include gallery id="gallery_film" caption="Shot on Film" %}
+<div class="gallery-grid">
+{% for photo in page.gallery_film %}
+<a href="{{ photo.url | relative_url }}" aria-label="View film photograph {{ forloop.index }}"><img src="{{ photo.image_path | relative_url }}" alt="Film photograph {{ forloop.index }} from the 2025 portfolio" loading="lazy" decoding="async"></a>
+{% endfor %}
+</div>

@@ -1,0 +1,7 @@
+{% assign entry = include.entry %}
+<article class="cv-entry" id="{{ entry.id }}">
+  <div class="cv-entry-heading"><h3>{{ entry.organization | escape }}</h3><span>{{ entry.period | escape }}</span></div>
+  <p class="cv-role">{{ entry.role | escape }} · {{ entry.location | escape }}</p>
+  <h4>{{ entry.project | escape }}</h4>
+  <ul>{% for detail in entry.details %}<li>{{ detail | markdownify }}</li>{% endfor %}</ul>
+</article>

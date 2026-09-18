@@ -1,7 +1,32 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: personal
+title: Home
+home: true
 ---
+<section class="hero" aria-labelledby="intro-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="small-dot" aria-hidden="true"></span> Electrical & Computer Engineering · JHU</p>
+    <h1 id="intro-title">Yinzhe Zhou<span lang="zh">周寅哲</span></h1>
+    <p class="hero-lead">Exploring intelligence,<br>from silicon to robots.</p>
+    <p class="intro">I'm a master's student in Electrical and Computer Engineering at Johns Hopkins University. My research focuses on tactile sensing and multimodal robot learning, with a background in neural computation and digital circuit design.</p>
+    <div class="hero-links"><a class="button" href="mailto:zhou.yinzhe@outlook.com">Get in touch <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ '/cv/' | relative_url }}">View CV <span aria-hidden="true">→</span></a></div>
+    <p class="availability">Preparing for Fall 2027 PhD applications</p>
+  </div>
+  <figure class="portrait"><div class="portrait-frame"><img src="{{ '/assets/images/bio-photo.jpg' | relative_url }}" alt="Portrait of Yinzhe Zhou" width="1700" height="2420" fetchpriority="high"></div><figcaption><span>Based in Baltimore, MD</span><span aria-hidden="true">39.29° N</span></figcaption></figure>
+</section>
+<section class="home-section" aria-labelledby="research-heading">
+  <div class="section-heading"><div><p class="eyebrow">01 / Research</p><h2 id="research-heading">Recent work</h2></div><a class="text-link" href="{{ '/research/' | relative_url }}">Research <span aria-hidden="true">↗</span></a></div>
+  {% include research-entry.html %}
+  {% for entry in site.data.cv.research limit:2 %}
+  <article class="home-research"><p class="cv-role">{{ entry.organization | escape }} · {{ entry.period | escape }}</p><h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.project | escape }}</a></h3><p>{{ entry.summary | escape }}</p></article>
+  {% endfor %}
+</section>
+<section class="home-section" aria-labelledby="internships-heading">
+  <div class="section-heading"><h2 id="internships-heading">Research Internships</h2></div>
+  {% for entry in site.data.cv.internships %}<div class="home-internship"><h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.organization | escape }}</a></h3><p>{{ entry.role | escape }} · {{ entry.period | escape }}</p></div>{% endfor %}
+</section>
+<section class="home-section education-section" aria-labelledby="education-heading">
+  <div class="section-heading"><div><p class="eyebrow">02 / Background</p><h2 id="education-heading">Education</h2></div></div>
+  <div class="education-grid"><article><p class="education-date">2025 — Present</p><h3>Johns Hopkins University</h3><p>M.S. in Electrical and Computer Engineering</p><span>Baltimore, USA</span></article><article><p class="education-date">2021 — 2025</p><h3>University of Macau</h3><p>B.S. in Electrical and Computer Engineering</p><span>Macau SAR, China</span></article></div>
+</section>
+<section class="photography-note" aria-labelledby="photography-heading"><div><p class="eyebrow">03 / Outside the lab</p><h2 id="photography-heading">A different kind of observation.</h2><p>Alongside research, I enjoy photography and fencing.</p></div><a class="button button-light" href="{{ '/photography/' | relative_url }}">Explore photography <span aria-hidden="true">↗</span></a></section>
