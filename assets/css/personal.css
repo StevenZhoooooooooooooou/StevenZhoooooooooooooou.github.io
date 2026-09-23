@@ -143,12 +143,6 @@ p+p {
   margin-left:20px;
   vertical-align:middle
 }
-.hero-lead {
-  font-size:28px;
-  font-family:var(--serif);
-  line-height:1.4;
-  color:#396a8c
-}
 .hero .intro {
   margin-top:19px;
   max-width:590px;
@@ -560,9 +554,6 @@ p+p {
     font-size:18px;
     margin-left:12px
   }
-  .hero-lead {
-    font-size:25px
-  }
   .site-header nav {
     gap:20px
   }
@@ -612,9 +603,6 @@ p+p {
   }
   .hero h1 span {
     font-size:18px
-  }
-  .hero-lead {
-    font-size:26px
   }
   .portrait {
     width:160px;
