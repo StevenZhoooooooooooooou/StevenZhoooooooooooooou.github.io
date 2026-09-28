@@ -100,6 +100,17 @@ research:
       - Refined hardware architecture and I/O interfaces to support deterministic time-triggered behavior.
       - "**Tech:** Quartus, MATLAB."
 
+teaching:
+  - id: ca-robot-learning
+    organization: Johns Hopkins University
+    location: Baltimore, MD, USA
+    role: Course Assistant
+    period: Aug. 31 – Dec. 23, 2026
+    project: "Hands-on Robot Learning (EN.601.498.01.FA26)"
+    instructor: Krishna Murthy Jatavallabhula
+    summary: Course assistant for Hands-on Robot Learning, taught by Krishna Murthy Jatavallabhula.
+    page: /cv/
+
 honors:
   - "**1st Runner-Up**, IEEE Student Branch Project Competition 2025."
   - "**Akrostar Academic Prize**, University of Macau, 2024/2025."

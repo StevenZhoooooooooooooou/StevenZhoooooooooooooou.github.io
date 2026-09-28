@@ -23,5 +23,16 @@ permalink: /cv/
   <h2 id="academic-research">Research Experience</h2>
   {% for entry in site.data.cv.research %}{% include cv-experience.html entry=entry %}{% endfor %}
 </section>
+<section class="cv-section" aria-labelledby="teaching">
+  <h2 id="teaching">Teaching Experience</h2>
+  {% for entry in site.data.cv.teaching %}
+  <article class="cv-entry" id="{{ entry.id }}">
+    <div class="cv-entry-heading"><h3>{{ entry.organization | escape }}</h3><span>{{ entry.period | escape }}</span></div>
+    <p class="cv-role">{{ entry.role | escape }} · {{ entry.location | escape }}</p>
+    <h4>{{ entry.project | escape }}</h4>
+    <p>Instructor: {{ entry.instructor | escape }}</p>
+  </article>
+  {% endfor %}
+</section>
 <section class="cv-section" aria-labelledby="honors"><h2 id="honors">Selected Honors &amp; Awards</h2><ul>{% for entry in site.data.cv.honors %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>
 <section class="cv-section" aria-labelledby="skills"><h2 id="skills">Technical Skills</h2><ul>{% for entry in site.data.cv.skills %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>

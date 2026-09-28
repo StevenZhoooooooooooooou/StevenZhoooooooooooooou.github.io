@@ -45,13 +45,14 @@ home: true
 
     <section class="home-block" id="experience" aria-labelledby="experience-title">
       <div class="home-block-heading"><h2 id="experience-title">Experience</h2></div>
-      {% assign all_experiences = site.data.cv.internships | concat: site.data.cv.research %}
+      {% assign all_experiences = site.data.cv.internships | concat: site.data.cv.research | concat: site.data.cv.teaching %}
       {% for experience_id in site.data.home.experience_order %}
       {% assign entry = all_experiences | where: "id", experience_id | first %}
+      {% assign detail_page = entry.page | default: '/research/' %}
       <article class="home-detail-row home-experience">
         <p class="home-detail-date">{{ entry.period | escape }}</p>
         <div>
-          <h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.role | escape }} · {{ entry.organization | escape }}</a></h3>
+          <h3><a href="{{ detail_page | relative_url }}#{{ entry.id }}">{{ entry.role | escape }} · {{ entry.organization | escape }}</a></h3>
           <p class="home-experience-project">{{ entry.project | escape }}</p>
           <p>{{ entry.summary | escape }}</p>
         </div>
