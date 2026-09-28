@@ -1,8 +1,29 @@
 haco:
+  id: haco
   title: "Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation"
   author: "Yinzhe Zhou"
   position: "Co-first author"
+  authors:
+    - Naisheng Ye
+    - Yinzhe Zhou
+    - Junkai Zhao
+    - Yuhang Lu
+    - Checheng Yu
+    - Zhenjie Yang
+    - Pengwei Wang
+    - Hongyang Li
+  status: "Unpublished manuscript"
+  year: 2026
   organization: "Beijing Academy of Artificial Intelligence (BAAI)"
   role: "Research Intern"
   period: "Jun – Sep 2026"
   summary: "HACo combines compliant teleoperation and haptic-conditioned policy learning for force-sensitive manipulation, achieving 83% mean success across five real-robot tasks."
+
+opentac:
+  id: opentac
+  title: "OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing"
+  author: "Yinzhe Zhou"
+  position: "Co-author"
+  status: "Manuscript"
+  year: 2026
+  summary: "OpenTac presents customizable 3D tactile skins and tools for sensor design, simulation, cross-sensor transfer, and adaptive sampling."

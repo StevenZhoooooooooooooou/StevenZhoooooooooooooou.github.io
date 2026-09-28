@@ -196,34 +196,46 @@ p+p {
   letter-spacing:.15em;
   text-transform:uppercase
 }
-.home-featured-work {
-  padding:18px 0;
+.publication-entry {
+  padding:18px 0 20px;
   border-bottom:1px solid var(--line)
 }
-.home-work-meta {
+.publication-meta {
   color:var(--blue);
   font:11px/1.5 var(--ui)
 }
-.home-featured-work h3 {
+.publication-entry h3 {
   margin:6px 0 7px;
   font-size:18px;
   font-weight:500;
   line-height:1.4
 }
-.home-featured-work h3 a,.home-experience h3 a {
+.publication-entry h3 a,.home-experience h3 a {
   color:var(--ink);
   text-decoration:none
 }
-.home-featured-work h3 a:hover,.home-experience h3 a:hover {
+.publication-entry h3 a:hover,.home-experience h3 a:hover {
   color:var(--blue);
   text-decoration:underline
 }
-.home-featured-work p:not(.home-work-meta) {
-  margin-top:6px;
-  color:var(--muted)
+.publication-authors {
+  color:var(--muted);
+  font:12px/1.7 var(--ui)
 }
-.home-featured-work .home-work-authors {
-  font:12px/1.6 var(--ui)
+.publication-authors strong {
+  color:var(--ink)
+}
+.publication-summary {
+  margin-top:9px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.7
+}
+.publications-list {
+  max-width:780px
+}
+.publications-list .publication-entry {
+  padding:23px 0
 }
 .home-more {
   display:inline-block;
@@ -774,9 +786,6 @@ p+p {
     letter-spacing:.04em;
     white-space:nowrap
   }
-  .site-header nav a:first-child {
-    display:none
-  }
   .wordmark {
     flex:none;
     font-size:14px
@@ -921,6 +930,17 @@ p+p {
   }
   .gallery-grid a {
     margin-bottom:10px
+  }
+}
+@media(max-width:370px) {
+  .site-header {
+    align-items:flex-start;
+    flex-direction:column;
+    gap:3px
+  }
+  .site-header nav {
+    width:100%;
+    justify-content:space-between
   }
 }
 @media(prefers-reduced-motion:reduce) {

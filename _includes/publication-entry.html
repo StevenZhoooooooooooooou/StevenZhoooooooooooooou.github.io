@@ -1,0 +1,13 @@
+{% assign publication = include.publication %}
+<article class="publication-entry" id="{{ publication.id }}">
+  <p class="publication-meta">{{ publication.status | escape }} · {{ publication.year | escape }}</p>
+  <h3>{% if include.linked %}<a href="{{ '/publications/' | relative_url }}#{{ publication.id }}">{% endif %}{{ publication.title | escape }}{% if include.linked %}</a>{% endif %}</h3>
+  <p class="publication-authors">
+    {% if publication.authors %}
+      {% for author in publication.authors %}{% if author == publication.author %}<strong>{{ author | escape }}</strong> <span class="publication-position">({{ publication.position | downcase | escape }})</span>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    {% else %}
+      <strong>{{ publication.author | escape }}</strong> <span class="publication-position">({{ publication.position | downcase | escape }})</span>
+    {% endif %}
+  </p>
+  <p class="publication-summary">{{ publication.summary | escape }}</p>
+</article>

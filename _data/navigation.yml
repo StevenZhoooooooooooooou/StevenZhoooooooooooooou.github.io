@@ -1,12 +1,9 @@
 main:
-  - title: "Home"
-    url: /
-  
+  - title: "Publications"
+    url: /publications/
   - title: "Research"
     url: /research/
-  
   - title: "Photography"
     url: /photography/
-  
   - title: "CV"
     url: /cv/

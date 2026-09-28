@@ -3,8 +3,7 @@ layout: personal
 title: Research
 permalink: /research/
 ---
-<nav class="section-nav" aria-label="Research sections"><a href="#manuscripts">Manuscripts</a><a href="#internships">Research Internships</a><a href="#academic-research">Research Experience</a></nav>
-<section class="cv-section" aria-labelledby="manuscripts"><h2 id="manuscripts">Manuscripts</h2>{% include manuscript-entry.html %}</section>
+<nav class="section-nav" aria-label="Research sections"><a href="#internships">Research Internships</a><a href="#academic-research">Research Experience</a><a href="{{ '/publications/' | relative_url }}">Publications</a></nav>
 <section class="cv-section" aria-labelledby="internships">
   <h2 id="internships">Research Internships</h2>
   {% for entry in site.data.cv.internships %}{% include cv-experience.html entry=entry %}{% endfor %}

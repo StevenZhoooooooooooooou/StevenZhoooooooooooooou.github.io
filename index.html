@@ -26,22 +26,11 @@ home: true
       <p>My earlier work spans neural decoding, biosignal analysis, FPGA systems, and language-model fine-tuning. I'm preparing to apply for Fall 2027 PhD programs.</p>
     </section>
 
-    <section class="home-block" id="selected-research" aria-labelledby="selected-research-title">
-      <div class="home-block-heading"><h2 id="selected-research-title">Selected Research</h2></div>
-      <article class="home-featured-work">
-        <p class="home-work-meta">Unpublished manuscript · 2026</p>
-        <h3><a href="{{ '/research/' | relative_url }}#haco">{{ site.data.research.haco.title | escape }}</a></h3>
-        <p class="home-work-authors"><strong>Yinzhe Zhou</strong> (co-first author) · BAAI</p>
-        <p>{{ site.data.research.haco.summary | escape }}</p>
-      </article>
-      {% for entry in site.data.cv.research limit:2 %}
-      <article class="home-featured-work">
-        <p class="home-work-meta">{{ entry.organization | escape }} · {{ entry.period | escape }}</p>
-        <h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.project | escape }}</a></h3>
-        <p>{{ entry.summary | escape }}</p>
-      </article>
-      {% endfor %}
-      <a class="home-more" href="{{ '/research/' | relative_url }}">Research details <span aria-hidden="true">↗</span></a>
+    <section class="home-block" id="publications" aria-labelledby="publications-title">
+      <div class="home-block-heading"><h2 id="publications-title">Publications</h2></div>
+      {% include publication-entry.html publication=site.data.research.haco linked=true %}
+      {% include publication-entry.html publication=site.data.research.opentac linked=true %}
+      <a class="home-more" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a>
     </section>
 
     <section class="home-block" id="education" aria-labelledby="education-title">
