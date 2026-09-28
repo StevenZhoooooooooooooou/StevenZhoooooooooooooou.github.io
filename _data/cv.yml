@@ -108,7 +108,6 @@ honors:
   - "**Top 10%**, Huawei ICT Competition (Preliminary), Macau, 2021–2022."
 
 skills:
-  - "**Programming:** Python, MATLAB, C/C++, Verilog, VHDL."
-  - "**ML / Robotics:** PyTorch, ROS 2, Diffusion Policy, Flow Matching, multimodal data synchronization, robot imitation learning."
-  - "**Hardware / EDA:** FPGA development, embedded firmware, signal acquisition, Vivado, Quartus, Cadence, 3D CAD."
-  - "**Research Domains:** Tactile sensing, biosignal processing, brain–machine interfaces, LLM fine-tuning, digital circuit design."
+  - "**Programming:** Python, C/C++, MATLAB, Verilog, VHDL."
+  - "**Robotics / ML:** PyTorch, ROS 2, Diffusion Policy, Flow Matching."
+  - "**Sensing / Hardware:** Embedded firmware, data acquisition, FPGA development, Vivado, Quartus, Cadence."
