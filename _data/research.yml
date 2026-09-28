@@ -23,7 +23,22 @@ opentac:
   id: opentac
   title: "OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing"
   author: "Yinzhe Zhou"
-  position: "Co-author"
+  authors:
+    - "Ariel Slepyan*"
+    - Geeta Chandra Raju Bethala
+    - Jiafeng Gu
+    - Anagha Rajendra Dangle
+    - Yinzhe Zhou
+    - Hongyuan Fu
+    - Jade Sim
+    - Tuhin Basu
+    - Xinyi Yin
+    - Md Faizal Karim
+    - Gregory Hager
+    - Homanga Bharadhwaj
+    - Anand Bhattad
+    - Krishna Murthy Jatavallabhula
+    - Nitish V. Thakor
   status: "Manuscript"
   year: 2026
   summary: "OpenTac presents customizable 3D tactile skins and tools for sensor design, simulation, cross-sensor transfer, and adaptive sampling."

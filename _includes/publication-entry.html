@@ -4,9 +4,9 @@
   <h3>{% if include.linked %}<a href="{{ '/publications/' | relative_url }}#{{ publication.id }}">{% endif %}{{ publication.title | escape }}{% if include.linked %}</a>{% endif %}</h3>
   <p class="publication-authors">
     {% if publication.authors %}
-      {% for author in publication.authors %}{% if author == publication.author %}<strong>{{ author | escape }}</strong> <span class="publication-position">({{ publication.position | downcase | escape }})</span>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      {% for author in publication.authors %}{% if author == publication.author %}<strong>{{ author | escape }}</strong>{% if publication.position %} <span class="publication-position">({{ publication.position | downcase | escape }})</span>{% endif %}{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
     {% else %}
-      <strong>{{ publication.author | escape }}</strong> <span class="publication-position">({{ publication.position | downcase | escape }})</span>
+      <strong>{{ publication.author | escape }}</strong>{% if publication.position %} <span class="publication-position">({{ publication.position | downcase | escape }})</span>{% endif %}
     {% endif %}
   </p>
   <p class="publication-summary">{{ publication.summary | escape }}</p>
