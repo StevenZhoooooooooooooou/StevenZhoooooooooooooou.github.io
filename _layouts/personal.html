@@ -11,7 +11,7 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
-    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Yinzhe Zhou home"><span class="monogram" aria-hidden="true">yz.</span><span>Yinzhe Zhou</span></a>
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Yinzhe Zhou home">Yinzhe Zhou</a>
     <nav aria-label="Main navigation">
       {% for item in site.data.navigation.main %}
       <a href="{{ item.url | relative_url }}"{% if page.url == item.url or item.url == '/photography/' and page.url contains '/photography/' %} aria-current="page"{% endif %}>{{ item.title }}</a>

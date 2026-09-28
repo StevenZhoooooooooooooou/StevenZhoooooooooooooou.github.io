@@ -3,29 +3,72 @@ layout: personal
 title: Home
 home: true
 ---
-<section class="hero" aria-labelledby="intro-title">
-  <div class="hero-copy">
-    <p class="eyebrow"><span class="small-dot" aria-hidden="true"></span> Electrical & Computer Engineering · JHU</p>
-    <h1 id="intro-title">Yinzhe Zhou<span lang="zh">周寅哲</span></h1>
-    <p class="intro">I'm a master's student in Electrical and Computer Engineering at Johns Hopkins University. My research focuses on tactile sensing and multimodal robot learning, with a background in neural computation and digital circuit design.</p>
-    <div class="hero-links"><a class="button" href="mailto:zhou.yinzhe@outlook.com">Get in touch <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ '/cv/' | relative_url }}">View CV <span aria-hidden="true">→</span></a></div>
-    <p class="availability">Preparing for Fall 2027 PhD applications</p>
+<div class="home-layout">
+  <aside class="home-profile" aria-label="Profile">
+    <img class="home-portrait" src="{{ '/assets/images/bio-photo.jpg' | relative_url }}" alt="Portrait of Yinzhe Zhou" width="1700" height="2420" fetchpriority="high">
+    <div class="home-profile-copy">
+      <h1>Yinzhe Zhou <span lang="zh">周寅哲</span></h1>
+      <p class="home-affiliation">M.S. Electrical &amp; Computer Engineering<br>Johns Hopkins University</p>
+      <p class="home-focus">Tactile sensing and robot learning.</p>
+      <ul class="home-contact">
+        <li><a href="mailto:zhou.yinzhe@outlook.com">Email <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://github.com/StevenZhoooooooooooooou">GitHub <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/yinzhe-zhou">LinkedIn <span aria-hidden="true">↗</span></a></li>
+        <li><a href="{{ '/assets/docs/Yinzhe_CV.pdf' | relative_url }}">Curriculum Vitae <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <div class="home-content">
+    <section class="home-about" aria-label="About me">
+      <p>I'm a master's student in Electrical and Computer Engineering at <strong>Johns Hopkins University</strong>. My research focuses on tactile sensing and multimodal robot learning, from building sensors and data pipelines to training manipulation policies.</p>
+      <p>At Johns Hopkins, I work on shear-force sensing and event-based visuo-tactile imitation learning. During my 2026 internship at <strong>Beijing Academy of Artificial Intelligence</strong>, I helped develop HACo, a haptic approach to force-aware dexterous manipulation.</p>
+      <p>My earlier work spans neural decoding, biosignal analysis, FPGA systems, and language-model fine-tuning. I'm preparing to apply for Fall 2027 PhD programs.</p>
+    </section>
+
+    <section class="home-block" id="selected-research" aria-labelledby="selected-research-title">
+      <div class="home-block-heading"><h2 id="selected-research-title">Selected Research</h2></div>
+      <article class="home-featured-work">
+        <p class="home-work-meta">Unpublished manuscript · 2026</p>
+        <h3><a href="{{ '/research/' | relative_url }}#haco">{{ site.data.research.haco.title | escape }}</a></h3>
+        <p class="home-work-authors"><strong>Yinzhe Zhou</strong> (co-first author) · BAAI</p>
+        <p>{{ site.data.research.haco.summary | escape }}</p>
+      </article>
+      {% for entry in site.data.cv.research limit:2 %}
+      <article class="home-featured-work">
+        <p class="home-work-meta">{{ entry.organization | escape }} · {{ entry.period | escape }}</p>
+        <h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.project | escape }}</a></h3>
+        <p>{{ entry.summary | escape }}</p>
+      </article>
+      {% endfor %}
+      <a class="home-more" href="{{ '/research/' | relative_url }}">Research details <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="home-block" id="education" aria-labelledby="education-title">
+      <div class="home-block-heading"><h2 id="education-title">Education</h2></div>
+      {% for entry in site.data.cv.education %}
+      <article class="home-detail-row">
+        <p class="home-detail-date">{{ entry.period | escape }}</p>
+        <div><h3>{{ entry.organization | escape }}</h3><p>{{ entry.degree | escape }}</p><p class="home-detail-location">{{ entry.location | escape }}</p></div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section class="home-block" id="experience" aria-labelledby="experience-title">
+      <div class="home-block-heading"><h2 id="experience-title">Experience</h2></div>
+      {% assign all_experiences = site.data.cv.internships | concat: site.data.cv.research %}
+      {% for experience_id in site.data.home.experience_order %}
+      {% assign entry = all_experiences | where: "id", experience_id | first %}
+      <article class="home-detail-row home-experience">
+        <p class="home-detail-date">{{ entry.period | escape }}</p>
+        <div>
+          <h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.role | escape }} · {{ entry.organization | escape }}</a></h3>
+          <p class="home-experience-project">{{ entry.project | escape }}</p>
+          <p>{{ entry.summary | escape }}</p>
+        </div>
+      </article>
+      {% endfor %}
+      <a class="home-more" href="{{ '/cv/' | relative_url }}">Full CV <span aria-hidden="true">↗</span></a>
+    </section>
   </div>
-  <figure class="portrait"><div class="portrait-frame"><img src="{{ '/assets/images/bio-photo.jpg' | relative_url }}" alt="Portrait of Yinzhe Zhou" width="1700" height="2420" fetchpriority="high"></div><figcaption><span>Based in Baltimore, MD</span><span aria-hidden="true">39.29° N</span></figcaption></figure>
-</section>
-<section class="home-section" aria-labelledby="research-heading">
-  <div class="section-heading"><div><p class="eyebrow">01 / Research</p><h2 id="research-heading">Recent work</h2></div><a class="text-link" href="{{ '/research/' | relative_url }}">Research <span aria-hidden="true">↗</span></a></div>
-  {% include research-entry.html %}
-  {% for entry in site.data.cv.research limit:2 %}
-  <article class="home-research"><p class="cv-role">{{ entry.organization | escape }} · {{ entry.period | escape }}</p><h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.project | escape }}</a></h3><p>{{ entry.summary | escape }}</p></article>
-  {% endfor %}
-</section>
-<section class="home-section" aria-labelledby="internships-heading">
-  <div class="section-heading"><h2 id="internships-heading">Research Internships</h2></div>
-  {% for entry in site.data.cv.internships %}<div class="home-internship"><h3><a href="{{ '/research/' | relative_url }}#{{ entry.id }}">{{ entry.organization | escape }}</a></h3><p>{{ entry.role | escape }} · {{ entry.period | escape }}</p></div>{% endfor %}
-</section>
-<section class="home-section education-section" aria-labelledby="education-heading">
-  <div class="section-heading"><div><p class="eyebrow">02 / Background</p><h2 id="education-heading">Education</h2></div></div>
-  <div class="education-grid"><article><p class="education-date">2025 — Present</p><h3>Johns Hopkins University</h3><p>M.S. in Electrical and Computer Engineering</p><span>Baltimore, USA</span></article><article><p class="education-date">2021 — 2025</p><h3>University of Macau</h3><p>B.S. in Electrical and Computer Engineering</p><span>Macau SAR, China</span></article></div>
-</section>
-<section class="photography-note" aria-labelledby="photography-heading"><div><p class="eyebrow">03 / Outside the lab</p><h2 id="photography-heading">A different kind of observation.</h2><p>Alongside research, I enjoy photography and fencing.</p></div><a class="button button-light" href="{{ '/photography/' | relative_url }}">Explore photography <span aria-hidden="true">↗</span></a></section>
+</div>

@@ -22,6 +22,7 @@ internships:
     role: Research Intern
     period: Jun. 2026 – Sep. 2026
     project: "HACo: Haptic Active Compliance for Dexterous Manipulation"
+    summary: Built a force-aware manipulation pipeline combining compliant teleoperation, haptic feedback, and policy learning, achieving 83% mean success across five real-robot tasks.
     details:
       - Developed compliance-regulated teleoperation for dual UR5 arms with Sharpa dexterous hands, combining Cartesian admittance and fingertip force regulation; collected **500 demonstrations** across five tasks with synchronized vision, robot state, tactile, and joint-torque observations.
       - Developed a kinematics-aligned haptic encoder fusing ten fingertip tactile streams with 44 hand-joint torques, and gated cross-attention to condition a pretrained vision-language-action model on contact and load feedback.
@@ -33,6 +34,7 @@ internships:
     role: Research Intern
     period: Jun. 2024 – Sep. 2024
     project: Fine-Tuning Mixtral 8x7B on Biochemical Molecular Data
+    summary: Fine-tuned Mixtral 8x7B for molecular property prediction using PubChem data and SMILES-neighbor retrieval, improving test accuracy from 67% to 77%.
     details:
       - Constructed and preprocessed a PubChem-based dataset for molecular property prediction tasks.
       - Implemented KNN retrieval over SMILES representations to provide similar-molecule context for in-context learning.
@@ -46,7 +48,7 @@ research:
     role: Graduate Researcher
     period: Feb. 2026 – Present
     project: Scalable Shear-Force Sensing for Tactile Perception and Robotic Grasping
-    summary: Embedded sensing, real-time data acquisition, and robotic grasping experiments.
+    summary: Developing scalable piezoresistive shear-force sensing, embedded readout, and grasping experiments for robot data collection.
     details:
       - Contributed to a scalable piezoresistive shear-force sensing system spanning multiple sensor form factors and integration onto a UMI handheld gripper for robot data collection.
       - Developed embedded firmware and data-acquisition routines for real-time shear-field readout across different sensor-array configurations.
@@ -57,7 +59,7 @@ research:
     role: Graduate Researcher
     period: Nov. 2025 – Present
     project: Event-Based Visuo-Tactile Sensing for Robot Imitation Learning
-    summary: Multimodal imitation learning with RGB, tactile, and event observations.
+    summary: Building a synchronized RGB, tactile, and event-based imitation-learning pipeline for contact-rich robot manipulation.
     details:
       - Building a multimodal imitation-learning pipeline that fuses RGB, tactile, and event streams for a UR robot-mounted gripper, targeting contact, slip, and fast-motion cues missed by RGB-only policies.
       - Implemented a synchronized multi-rate data pipeline from handheld demonstrations into observation–action samples, aligning RGB at 30 Hz, tactile/event streams at 120 Hz, and 3D pose at 75 Hz.
@@ -69,6 +71,7 @@ research:
     role: Final Year Project — Faculty Dean's Honors List
     period: Sep. 2024 – May 2025
     project: Singular Spectrum Analysis for Biosignal Denoising and Feature Extraction
+    summary: Developed a two-level Singular Spectrum Analysis method to denoise ECG and EEG signals and recover physiological features.
     details:
       - Designed a two-level Singular Spectrum Analysis framework combining component correlation and waveform reconstruction for ECG and EEG signal analysis.
       - Localized ECG PQRST features and removed EEG artifacts while preserving neural rhythms across delta, theta, alpha, and beta bands.
@@ -80,6 +83,7 @@ research:
     role: Research Assistant
     period: May 2023 – Aug. 2023
     project: Neural Decoding for Implantable Brain–Machine Interfaces with ANN and SNN
+    summary: Benchmarked ANN and SNN decoders on primate neural recordings for implantable brain–machine interfaces.
     details:
       - Preprocessed raw primate neural recordings into supervised datasets with movement coordinates, finger positions, and spike trains.
       - Designed and benchmarked ANN and SNN decoders for neural decoding, comparing accuracy–efficiency trade-offs for implantable BMI scenarios.
@@ -90,6 +94,7 @@ research:
     role: Research Assistant
     period: May 2022 – Jul. 2022
     project: FPGA-Based Hardware Time-Triggered System for Biomedical Engineering
+    summary: Implemented FPGA signal conditioning and a deterministic time-triggered architecture for biomedical data acquisition.
     details:
       - Implemented FPGA-based signal conditioning and filtering pipelines in Quartus for biomedical data acquisition.
       - Refined hardware architecture and I/O interfaces to support deterministic time-triggered behavior.
