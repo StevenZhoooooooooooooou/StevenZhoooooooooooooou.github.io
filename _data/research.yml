@@ -1,6 +1,6 @@
 haco:
   id: haco
-  title: "Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation"
+  title: "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation"
   author: "Yinzhe Zhou"
   position: "Co-first author"
   authors:
@@ -12,7 +12,9 @@ haco:
     - Zhenjie Yang
     - Pengwei Wang
     - Hongyang Li
-  status: "Unpublished manuscript"
+  status: "arXiv preprint"
+  arxiv_id: "2609.36596"
+  url: "https://arxiv.org/abs/2609.36596"
   year: 2026
   organization: "Beijing Academy of Artificial Intelligence (BAAI)"
   role: "Research Intern"

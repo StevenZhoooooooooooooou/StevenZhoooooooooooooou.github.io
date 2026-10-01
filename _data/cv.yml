@@ -22,6 +22,8 @@ internships:
     role: Research Intern
     period: Jun. 2026 – Sep. 2026
     project: "HACo: Haptic Active Compliance for Dexterous Manipulation"
+    paper_url: "https://arxiv.org/abs/2609.36596"
+    paper_label: "arXiv:2609.36596"
     summary: Built a force-aware manipulation pipeline combining compliant teleoperation, haptic feedback, and policy learning, achieving 83% mean success across five real-robot tasks.
     details:
       - Developed compliance-regulated teleoperation for dual UR5 arms with Sharpa dexterous hands, combining Cartesian admittance and fingertip force regulation; collected **500 demonstrations** across five tasks with synchronized vision, robot state, tactile, and joint-torque observations.

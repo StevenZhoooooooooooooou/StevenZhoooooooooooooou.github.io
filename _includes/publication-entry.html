@@ -1,6 +1,6 @@
 {% assign publication = include.publication %}
 <article class="publication-entry" id="{{ publication.id }}">
-  <p class="publication-meta">{{ publication.status | escape }} · {{ publication.year | escape }}</p>
+  <p class="publication-meta">{{ publication.status | escape }} · {{ publication.year | escape }}{% if publication.url %} · <a href="{{ publication.url | escape }}">arXiv:{{ publication.arxiv_id | escape }} ↗</a>{% endif %}</p>
   <h3>{% if include.linked %}<a href="{{ '/publications/' | relative_url }}#{{ publication.id }}">{% endif %}{{ publication.title | escape }}{% if include.linked %}</a>{% endif %}</h3>
   <p class="publication-authors">
     {% if publication.authors %}
