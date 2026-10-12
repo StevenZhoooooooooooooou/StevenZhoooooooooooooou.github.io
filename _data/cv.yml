@@ -24,12 +24,12 @@ internships:
     project: "HACo: Haptic Active Compliance for Dexterous Manipulation"
     paper_url: "https://arxiv.org/abs/2609.36596"
     paper_label: "arXiv:2609.36596"
-    summary: Built a force-aware manipulation pipeline combining compliant teleoperation, haptic feedback, and policy learning, achieving 83% mean success across five real-robot tasks.
+    summary: Developed haptic teleoperation and force-aware robot policies, achieving 83% mean success across five real-robot tasks.
     details:
-      - Developed compliance-regulated teleoperation for dual UR5 arms with Sharpa dexterous hands, combining Cartesian admittance and fingertip force regulation; collected **500 demonstrations** across five tasks with synchronized vision, robot state, tactile, and joint-torque observations.
-      - Developed a kinematics-aligned haptic encoder fusing ten fingertip tactile streams with 44 hand-joint torques, and gated cross-attention to condition a pretrained vision-language-action model on contact and load feedback.
-      - Trained the policy with conditional flow matching on compliant-action targets and auxiliary compliant-intent supervision; integrated real-time action chunking for asynchronous closed-loop execution.
-      - Conducted real-robot comparisons and component ablations across **five force-sensitive tasks**, with 20 trials per task–method pair; HACo achieved **83% mean success**, versus **35%** for the strongest evaluated baseline (**+48 percentage points**).
+      - Built compliant dual-arm teleoperation and collected **500 multimodal demonstrations** across five force-sensitive tasks.
+      - Fused fingertip tactile signals and joint torques into a haptic encoder for a vision-language-action policy.
+      - Trained a flow-matching policy and deployed real-time action chunking for closed-loop control.
+      - Achieved **83% mean success** across five real-robot tasks, versus **35%** for the strongest evaluated baseline.
   - id: msra
     organization: Microsoft Research Asia (MSRA)
     location: Beijing, China
