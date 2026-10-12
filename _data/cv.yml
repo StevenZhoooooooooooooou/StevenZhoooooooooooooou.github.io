@@ -6,14 +6,14 @@ education:
     details:
       - "**GPA:** 3.73/4.0"
       - "**Relevant Coursework:** FPGA Synthesis Lab, CAD Design of Digital VLSI Systems, Advanced Topics in Microsystem Fabrication, Neural Implants and Interfaces, Mixed-Mode VLSI Systems."
-  - organization: University of Macau
-    location: Macao SAR
-    degree: Bachelor of Science in Electrical and Computer Engineering
-    period: Aug. 2021 – May 2025
   - organization: City University of Hong Kong
     location: Hong Kong SAR
     degree: Exchange Student, Department of Electrical Engineering
     period: Jan. 2023 – Aug. 2023
+  - organization: University of Macau
+    location: Macao SAR
+    degree: Bachelor of Science in Electrical and Computer Engineering
+    period: Aug. 2021 – May 2025
 
 internships:
   - id: haco
