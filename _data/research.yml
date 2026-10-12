@@ -22,7 +22,7 @@ haco:
   organization: "Beijing Academy of Artificial Intelligence (BAAI)"
   role: "Research Intern"
   period: "Jun – Sep 2026"
-  summary: "HACo combines compliant teleoperation and haptic-conditioned policy learning for force-sensitive manipulation, achieving 83% mean success across five real-robot tasks."
+  summary: "A tactile-conditioned VLA policy for force-aware dexterous manipulation, achieving 83% mean success across five real-robot tasks."
 
 opentac:
   id: opentac

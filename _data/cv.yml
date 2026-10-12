@@ -24,10 +24,10 @@ internships:
     project: "HACo: Haptic Active Compliance for Dexterous Manipulation"
     paper_url: "https://arxiv.org/abs/2609.36596"
     paper_label: "arXiv:2609.36596"
-    summary: Developed haptic teleoperation and force-aware robot policies, achieving 83% mean success across five real-robot tasks.
+    summary: Built compliant teleoperation and a tactile-conditioned VLA policy for dexterous manipulation, achieving 83% mean success across five real-robot tasks.
     details:
       - Built compliant dual-arm teleoperation and collected **500 multimodal demonstrations** across five force-sensitive tasks.
-      - Fused fingertip tactile signals and joint torques into a haptic encoder for a vision-language-action policy.
+      - Conditioned a pretrained VLA policy on fingertip tactile and joint-torque feedback using a haptic encoder.
       - Trained a flow-matching policy and deployed real-time action chunking for closed-loop control.
       - Achieved **83% mean success** across five real-robot tasks, versus **35%** for the strongest evaluated baseline.
   - id: msra
