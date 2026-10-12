@@ -2,6 +2,7 @@ haco:
   id: haco
   title: "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation"
   author: "Yinzhe Zhou"
+  position: "second author"
   authors:
     - "Naisheng Ye*"
     - "Yinzhe Zhou*"
