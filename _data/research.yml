@@ -2,10 +2,9 @@ haco:
   id: haco
   title: "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation"
   author: "Yinzhe Zhou"
-  position: "second author"
   authors:
-    - "Naisheng Ye*"
-    - "Yinzhe Zhou*"
+    - Naisheng Ye
+    - Yinzhe Zhou
     - Junkai Zhao
     - Yuhang Lu
     - Checheng Yu
@@ -30,7 +29,7 @@ opentac:
   title: "OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing"
   author: "Yinzhe Zhou"
   authors:
-    - "Ariel Slepyan*"
+    - Ariel Slepyan
     - Geeta Chandra Raju Bethala
     - Jiafeng Gu
     - Anagha Rajendra Dangle

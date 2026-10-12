@@ -1,5 +1,4 @@
 {% assign publication = include.publication %}
-{% assign starred_author = publication.author | append: '*' %}
 {% assign show_teaser = true %}
 {% if include.show_teaser == false %}{% assign show_teaser = false %}{% endif %}
 <article class="publication-entry{% if publication.teaser and show_teaser %} has-teaser{% endif %}" id="{{ publication.id }}">
@@ -13,9 +12,9 @@
   <h3>{% if include.linked %}<a href="{{ '/publications/' | relative_url }}#{{ publication.id }}">{% endif %}{{ publication.title | escape }}{% if include.linked %}</a>{% endif %}</h3>
   <p class="publication-authors">
     {% if publication.authors %}
-      {% for author in publication.authors %}{% assign display_author = author %}{% if include.show_author_marks == false %}{% assign display_author = author | remove: '*' %}{% endif %}{% if author == publication.author or author == starred_author %}<strong>{{ display_author | escape }}</strong>{% if publication.position %} <span class="publication-position">({{ publication.position | downcase | escape }})</span>{% endif %}{% else %}{{ display_author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      {% for author in publication.authors %}{% if author == publication.author %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
     {% else %}
-      <strong>{{ publication.author | escape }}</strong>{% if publication.position %} <span class="publication-position">({{ publication.position | downcase | escape }})</span>{% endif %}
+      <strong>{{ publication.author | escape }}</strong>
     {% endif %}
   </p>
   <p class="publication-summary">{{ publication.summary | escape }}</p>
