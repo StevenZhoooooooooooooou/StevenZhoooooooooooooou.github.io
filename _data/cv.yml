@@ -49,12 +49,12 @@ research:
     location: Baltimore, MD, USA
     role: Graduate Researcher
     period: Feb. 2026 – Present
-    project: Scalable Shear-Force Sensing for Tactile Perception and Robotic Grasping
-    summary: Developing scalable piezoresistive shear-force sensing, embedded readout, and grasping experiments for robot data collection.
+    project: "OpenTac: Shear-Force Simulation and Robot Experiments"
+    summary: Built Isaac Sim shear-force simulations and ran sensor characterization and robotic grasping experiments for the OpenTac 3D tactile sensing project.
     details:
-      - Contributed to a scalable piezoresistive shear-force sensing system spanning multiple sensor form factors and integration onto a UMI handheld gripper for robot data collection.
-      - Developed embedded firmware and data-acquisition routines for real-time shear-field readout across different sensor-array configurations.
-      - Designed and ran sensor characterization and robotic grasping experiments to evaluate shear-force features under varied contact conditions.
+      - Developed shear-force sensing simulations in Isaac Sim for robot contact scenarios.
+      - Contributed to integrating scalable piezoresistive tactile skins onto a UMI handheld gripper for robot data collection.
+      - Designed and ran sensor characterization and robotic grasping experiments to evaluate normal- and shear-force feedback under varied contact conditions.
   - id: event-tactile
     organization: Johns Hopkins University × TU Darmstadt
     location: Baltimore, MD, USA
@@ -122,5 +122,5 @@ honors:
 
 skills:
   - "**Programming:** Python, C/C++, MATLAB, Verilog, VHDL."
-  - "**Robotics / ML:** PyTorch, ROS 2, Diffusion Policy, Flow Matching."
+  - "**Robotics / ML:** PyTorch, ROS 2, Isaac Sim, Diffusion Policy, Flow Matching."
   - "**Sensing / Hardware:** Embedded firmware, data acquisition, FPGA development, Vivado, Quartus, Cadence."
