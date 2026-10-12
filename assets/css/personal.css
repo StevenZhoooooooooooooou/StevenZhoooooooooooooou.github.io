@@ -686,6 +686,10 @@ p+p {
   margin:10px 0;
   color:var(--muted)
 }
+.cv-section .cv-plain-list {
+  padding-left:0;
+  list-style:none
+}
 .cv-section li {
   margin-bottom:7px
 }

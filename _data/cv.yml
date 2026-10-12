@@ -121,5 +121,5 @@ honors:
 
 skills:
   - "**Programming:** Python, C/C++, MATLAB, Verilog, VHDL."
-  - "**Robotics / ML:** PyTorch, ROS 2, Isaac Sim, Diffusion Policy, Flow Matching."
-  - "**Sensing / Hardware:** Embedded firmware, data acquisition, FPGA development, Vivado, Quartus, Cadence."
+  - "**Robotics / ML:** PyTorch, ROS 2, Isaac Sim."
+  - "**Hardware / EDA:** Vivado, Quartus, Cadence."

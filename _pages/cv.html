@@ -34,5 +34,5 @@ permalink: /cv/
   </article>
   {% endfor %}
 </section>
-<section class="cv-section" aria-labelledby="honors"><h2 id="honors">Selected Honors &amp; Awards</h2><ul>{% for entry in site.data.cv.honors %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>
-<section class="cv-section" aria-labelledby="skills"><h2 id="skills">Technical Skills</h2><ul>{% for entry in site.data.cv.skills %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>
+<section class="cv-section" aria-labelledby="honors"><h2 id="honors">Selected Honors &amp; Awards</h2><ul class="cv-plain-list">{% for entry in site.data.cv.honors %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>
+<section class="cv-section" aria-labelledby="skills"><h2 id="skills">Technical Skills</h2><ul class="cv-plain-list">{% for entry in site.data.cv.skills %}<li>{{ entry | markdownify }}</li>{% endfor %}</ul></section>
