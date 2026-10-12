@@ -44,17 +44,6 @@ internships:
       - "**Tech:** Python, Git, VS Code."
 
 research:
-  - id: shear-sensing
-    organization: Johns Hopkins University
-    location: Baltimore, MD, USA
-    role: Graduate Researcher
-    period: Feb. 2026 – Sep. 2026
-    project: "OpenTac: Shear-Force Simulation and Robot Experiments"
-    summary: Built Isaac Sim shear-force simulations and ran sensor characterization and robotic grasping experiments for the OpenTac 3D tactile sensing project.
-    details:
-      - Developed shear-force sensing simulations in Isaac Sim for robot contact scenarios.
-      - Contributed to integrating scalable piezoresistive tactile skins onto a UMI handheld gripper for robot data collection.
-      - Designed and ran sensor characterization and robotic grasping experiments to evaluate normal- and shear-force feedback under varied contact conditions.
   - id: event-tactile
     organization: Johns Hopkins University × TU Darmstadt
     location: Baltimore, MD, USA
@@ -67,6 +56,17 @@ research:
       - Implemented a synchronized multi-rate data pipeline from handheld demonstrations into observation–action samples, aligning RGB at 30 Hz, tactile/event streams at 120 Hz, and 3D pose at 75 Hz.
       - Trained and deployed **Diffusion Policy** and **Flow Matching** algorithms on real-world tasks.
       - Developing an **event-conditioned Flow Matching** policy with a lightweight 3D-CNN event encoder for high-frequency tactile/event observations.
+  - id: shear-sensing
+    organization: Johns Hopkins University
+    location: Baltimore, MD, USA
+    role: Graduate Researcher
+    period: Feb. 2026 – Sep. 2026
+    project: "OpenTac: Shear-Force Simulation and Robot Experiments"
+    summary: Built Isaac Sim shear-force simulations and ran sensor characterization and robotic grasping experiments for the OpenTac 3D tactile sensing project.
+    details:
+      - Developed shear-force sensing simulations in Isaac Sim for robot contact scenarios.
+      - Contributed to integrating scalable piezoresistive tactile skins onto a UMI handheld gripper for robot data collection.
+      - Designed and ran sensor characterization and robotic grasping experiments to evaluate normal- and shear-force feedback under varied contact conditions.
   - id: biosignals
     organization: University of Macau
     location: Macao SAR
