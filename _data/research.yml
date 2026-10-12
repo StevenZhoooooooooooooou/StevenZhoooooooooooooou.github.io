@@ -15,6 +15,10 @@ haco:
   status: "arXiv preprint"
   arxiv_id: "2609.36596"
   url: "https://arxiv.org/abs/2609.36596"
+  teaser: "/assets/images/publications/haco-teaser.webp"
+  teaser_alt: "HACo overview showing compliant demonstrations, the haptic policy, and five robot tasks"
+  teaser_width: 1260
+  teaser_height: 632
   year: 2026
   organization: "Beijing Academy of Artificial Intelligence (BAAI)"
   role: "Research Intern"
@@ -42,5 +46,9 @@ opentac:
     - Krishna Murthy Jatavallabhula
     - Nitish V. Thakor
   status: "Manuscript"
+  teaser: "/assets/images/publications/opentac-teaser.webp"
+  teaser_alt: "OpenTac overview showing tactile sensors, the design ecosystem, and robot deployments"
+  teaser_width: 1200
+  teaser_height: 729
   year: 2026
   summary: "OpenTac presents customizable 3D tactile skins and tools for sensor design, simulation, cross-sensor transfer, and adaptive sampling."

@@ -1,6 +1,14 @@
 {% assign publication = include.publication %}
 {% assign starred_author = publication.author | append: '*' %}
-<article class="publication-entry" id="{{ publication.id }}">
+{% assign show_teaser = true %}
+{% if include.show_teaser == false %}{% assign show_teaser = false %}{% endif %}
+<article class="publication-entry{% if publication.teaser and show_teaser %} has-teaser{% endif %}" id="{{ publication.id }}">
+  {% if publication.teaser and show_teaser %}
+  <a class="publication-teaser" href="{{ publication.teaser | relative_url }}" aria-label="View full-size teaser for {{ publication.title | escape }}">
+    <img src="{{ publication.teaser | relative_url }}" alt="{{ publication.teaser_alt | escape }}" width="{{ publication.teaser_width }}" height="{{ publication.teaser_height }}" loading="lazy" decoding="async">
+  </a>
+  {% endif %}
+  <div class="publication-copy">
   <p class="publication-meta">{{ publication.status | escape }} · {{ publication.year | escape }}{% if publication.url %} · <a href="{{ publication.url | escape }}">arXiv:{{ publication.arxiv_id | escape }} ↗</a>{% endif %}</p>
   <h3>{% if include.linked %}<a href="{{ '/publications/' | relative_url }}#{{ publication.id }}">{% endif %}{{ publication.title | escape }}{% if include.linked %}</a>{% endif %}</h3>
   <p class="publication-authors">
@@ -11,4 +19,5 @@
     {% endif %}
   </p>
   <p class="publication-summary">{{ publication.summary | escape }}</p>
+  </div>
 </article>
