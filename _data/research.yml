@@ -1,5 +1,6 @@
 haco:
   id: haco
+  project_url: "https://opendrivelab.github.io/Haco-Page/"
   title: "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation"
   author: "Yinzhe Zhou"
   authors:
@@ -23,3 +24,32 @@ haco:
   role: "Research Intern"
   period: "Jun – Sep 2026"
   summary: "A tactile-conditioned VLA policy for force-aware dexterous manipulation, achieving 83% mean success across five real-robot tasks."
+
+opentac:
+  id: opentac
+  project_url: "https://opentac.github.io/"
+  title: "OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing"
+  author: "Yinzhe Zhou"
+  authors:
+    - Ariel Slepyan
+    - Geeta Chandra Raju Bethala
+    - Jiafeng Gu
+    - Anagha Rajendra Dangle
+    - Yinzhe Zhou
+    - Hongyuan Fu
+    - Jade Sim
+    - Tuhin Basu
+    - Xinyi Yin
+    - Md Faizal Karim
+    - Gregory Hager
+    - Homanga Bharadhwaj
+    - Anand Bhattad
+    - Krishna Murthy Jatavallabhula
+    - Nitish V. Thakor
+  status: "Manuscript"
+  teaser: "/assets/images/publications/opentac-teaser.webp"
+  teaser_alt: "OpenTac overview showing tactile sensors, the design ecosystem, and robot deployments"
+  teaser_width: 1200
+  teaser_height: 729
+  year: 2026
+  summary: "OpenTac presents customizable 3D tactile skins and tools for sensor design, simulation, cross-sensor transfer, and adaptive sampling."

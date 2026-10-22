@@ -23,12 +23,13 @@ home: true
   <div class="home-content">
     <section class="home-about" aria-label="About me">
       <p>I'm an M.S. student in Electrical and Computer Engineering at <strong>Johns Hopkins University</strong>, working with Prof. Nitish V. Thakor in the Neuroengineering and Biomedical Instrumentation Laboratory.</p>
-      <p>I study tactile sensing and robot learning for contact-rich manipulation. My recent work includes event-based visuo-tactile imitation learning and haptic feedback for dexterous manipulation. I plan to pursue a PhD in Fall 2027.</p>
+      <p>I study tactile sensing and robot learning for contact-rich manipulation. My recent work includes shear-force simulation and robot experiments, event-based visuo-tactile imitation learning, and haptic feedback for dexterous manipulation. I plan to pursue a PhD in Fall 2027.</p>
     </section>
 
     <section class="home-block" id="publications" aria-labelledby="publications-title">
       <div class="home-block-heading"><h2 id="publications-title">Publications</h2></div>
       {% include publication-entry.html publication=site.data.research.haco linked=true %}
+      {% include publication-entry.html publication=site.data.research.opentac linked=true %}
       <a class="home-more" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a>
     </section>
 

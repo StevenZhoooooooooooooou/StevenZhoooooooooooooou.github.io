@@ -17,6 +17,7 @@ education:
 
 internships:
   - id: haco
+    project_url: "https://opendrivelab.github.io/Haco-Page/"
     organization: Beijing Academy of Artificial Intelligence (BAAI)
     location: Beijing, China
     role: Research Intern
@@ -55,6 +56,18 @@ research:
       - Building a multimodal imitation-learning pipeline that fuses RGB, tactile, and event streams on a UR5 arm with a UMI gripper, targeting contact, slip, and fast-motion cues missed by RGB-only policies.
       - Built a VIVE-based teleoperation setup and multi-rate data pipeline, aligning RGB (30 Hz), tactile/event (120 Hz), and 3D pose (75 Hz) into observation–action samples.
       - Implemented and tested initial **Diffusion Policy** and **Flow Matching** baselines for the UR5 arm and UMI gripper.
+  - id: shear-sensing
+    project_url: "https://opentac.github.io/"
+    organization: Johns Hopkins University
+    location: Baltimore, MD, USA
+    role: Graduate Researcher
+    period: Feb. 2026 – Sep. 2026
+    project: "OpenTac: Shear-Force Simulation and Robot Experiments"
+    summary: Built Isaac Sim shear-force simulations and ran sensor characterization and robotic grasping experiments for the OpenTac 3D tactile sensing project.
+    details:
+      - Developed shear-force sensing simulations in Isaac Sim for robot contact scenarios.
+      - Contributed to integrating scalable piezoresistive tactile skins onto a UMI handheld gripper for robot data collection.
+      - Designed and ran sensor characterization and robotic grasping experiments to evaluate normal- and shear-force feedback under varied contact conditions.
   - id: biosignals
     organization: University of Macau
     location: Macao SAR
