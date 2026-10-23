@@ -58,6 +58,8 @@ research:
       - Implemented and tested initial **Diffusion Policy** and **Flow Matching** baselines for the UR5 arm and UMI gripper.
   - id: shear-sensing
     project_url: "https://opentac.github.io/"
+    paper_url: "https://arxiv.org/abs/2610.31661"
+    paper_label: "arXiv:2610.31661"
     organization: Johns Hopkins University
     location: Baltimore, MD, USA
     role: Graduate Researcher

@@ -46,7 +46,9 @@ opentac:
     - Anand Bhattad
     - Krishna Murthy Jatavallabhula
     - Nitish V. Thakor
-  status: "Manuscript"
+  status: "arXiv preprint"
+  arxiv_id: "2610.31661"
+  url: "https://arxiv.org/abs/2610.31661"
   teaser: "/assets/images/publications/opentac-teaser.webp"
   teaser_alt: "OpenTac overview showing tactile sensors, the design ecosystem, and robot deployments"
   teaser_width: 1200
