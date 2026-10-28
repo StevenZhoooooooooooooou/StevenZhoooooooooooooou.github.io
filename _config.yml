@@ -13,7 +13,7 @@ repository: "StevenZhoooooooooooooou/StevenZhoooooooooooooou.github.io"
 # --------------------
 author:
   name: "Yinzhe Zhou (周寅哲)"
-  avatar: "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/bio-avatar-illustrated-v4.png"
   # 更新后的 Bio，加入了 Robotics 和 SNN
   bio: "Master's Student in **ECE** at **JHU**. Photography enthusiast. Preparing for **2027 Fall PhD** application."
   location: "Baltimore, MD, USA"
